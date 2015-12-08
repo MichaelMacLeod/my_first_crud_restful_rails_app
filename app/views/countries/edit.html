@@ -1,0 +1,15 @@
+<%= form_for @country do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :population %>
+<%= f.text_field :population %>
+<br>
+<%= f.label :image %>
+<%= f.text_field :image %>
+<br>
+<%= f.label :stereotype_image %>
+<%= f.text_field :stereotype_image %>
+<br>
+<%= f.submit 'Update country!' %>
+<% end %>

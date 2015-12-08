@@ -1,0 +1,7 @@
+<% @countries.each do |country| %>
+<%= country.name %>'s population is <%= country.population %>
+<%= link_to("Show #{country.name}", country_path(country)) %>
+<%= button_to('Destroy Country (listing, not the actual place)', country_path(country), method: :delete, data: {confirm: 'Destroy them? Are you sure?!'}) %>
+<%= link_to('Edit Country', edit_country_path(country)) %>
+<br>
+<% end %>
